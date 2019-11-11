@@ -5,25 +5,10 @@ app=Flask(__name__)
 
 app.config['SECRET_KEY']='f36c53ad14fea64f1c8f5526da7f2022'
 
-posts=[
-	{
-		'author':'Nasar Hussain',
-		'title':'Blog post 1',
-		'content': 'First post content',
-		'date_posted':'July 5,2018'
-	},
-	{
-		'author':'Shehana Iqbal',
-		'title':'Blog post 2',
-		'content': 'Second post content',
-		'date_posted':'December 20,2018'
-	}
-]
-
 @app.route("/")
 @app.route("/home")
 def hello():
-	return render_template('home.html',posts=posts)
+	return render_template('home.html')
 
 @app.route("/about")
 def about():
