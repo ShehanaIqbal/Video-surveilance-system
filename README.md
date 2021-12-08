@@ -1,4 +1,6 @@
-﻿## Getting Started
+# Video Surveilance System with Automated Crime Detection
+ 
+ ## Getting Started
 
 In the root directory of the project...
 
